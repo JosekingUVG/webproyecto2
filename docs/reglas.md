@@ -59,23 +59,23 @@ Las manos posibles son:
 
 * Escalera Real (10, J, Q, K, A del mismo palo)\
 ![Escalera Real](../img/manos/escalera-real.png)
-* Escalera de Color (5 cartas consecutivas del mismo palo)
+* Escalera de Color (5 cartas consecutivas del mismo palo)\
 ![Escalera de Color](../img/manos/escalera-color.png)
-* Poker (4 cartas del mismo valor)
+* Poker (4 cartas del mismo valor)\
 ![Poker](../img/manos/poker.png)
-* Full House (3 cartas iguales + 1 pareja)
+* Full House (3 cartas iguales + 1 pareja)\
 ![Full House](../img/manos/full-house.png)
-* Color (5 cartas del mismo palo)
+* Color (5 cartas del mismo palo)\
 ![Color](../img/manos/color.png)
-* Escalera (5 cartas consecutivas)
+* Escalera (5 cartas consecutivas)\
 ![Escalera](../img/manos/escalera.png)
-* Trío (3 cartas iguales)
+* Trío (3 cartas iguales)\
 ![Trío](../img/manos/trio.png)
-* Doble Pareja (2 pares)
+* Doble Pareja (2 pares)\
 ![Doble Pareja](../img/manos/doble-pareja.png)
-* Pareja (2 cartas iguales)
+* Pareja (2 cartas iguales)\
 ![Pareja](../img/manos/pareja.png)
-* Carta Alta (ninguna de las anteriores, se puntúa por la carta más alta)
+* Carta Alta (ninguna de las anteriores, se puntúa por la carta más alta)\
 ![Carta Alta](../img/manos/carta-alta.png)
 ---
 
