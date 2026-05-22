@@ -1,0 +1,99 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: linear-gradient(
+    180deg,
+    #090014,
+    #12002b,
+    #1b003d
+  );
+
+  color: white;
+
+  min-height: 100vh;
+}
+
+/* MAIN MENU */
+
+.main-menu {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  padding: 2rem;
+}
+
+/* TITLE */
+
+.title {
+  font-size: 4rem;
+
+  color: #9f7aea;
+
+  text-shadow:
+    0 0 10px #9f7aea,
+    0 0 20px #6b46c1;
+}
+
+/* SUBTITLE */
+
+.subtitle {
+  font-size: 1.2rem;
+
+  color: #d6bcfa;
+
+  margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  width: 250px;
+}
+
+.menu-buttons button {
+  padding: 1rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #6b46c1;
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+/* HOVER */
+
+.menu-buttons button:hover {
+  background-color: #805ad5;
+
+  transform: scale(1.05);
+}
