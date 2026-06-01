@@ -1,4 +1,4 @@
-import { getCardImage } from "../../utils/getCardImage";
+import { getCardImage } from "../../utils/cloudinary/getCardImage";
 
 function Card({
   rank,
