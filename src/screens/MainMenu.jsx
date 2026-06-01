@@ -11,9 +11,7 @@ function MainMenu({ setScreen }) {
         Reglas
       </button>
 
-      <button onClick={() => setScreen("scores")}>
-        Puntajes
-      </button>
+      
     </main>
   );
 }

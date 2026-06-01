@@ -1,31 +1,33 @@
 import "../../styles/rules.css";
+import "../../styles/global.css";
+import "../../styles/buttons.css";
 
-function RulesNavBar({ setSection }) {
+function RulesNavBar({ section, setSection }) {
   return (
     <nav className="rules-navbar">
       <button
-        className="rules-btn"
+        className={section === "score" ? "active" : ""}
         onClick={() => setSection("score")}
       >
         Puntajes
       </button>
 
       <button
-        className="rules-btn"
+        className={section === "cards" ? "active" : ""}
         onClick={() => setSection("cards")}
       >
         Manos
       </button>
 
       <button
-        className="rules-btn"
+        className={section === "discards" ? "active" : ""}
         onClick={() => setSection("discards")}
       >
         Descartes
       </button>
 
       <button
-        className="rules-btn"
+        className={section === "jokers" ? "active" : ""}
         onClick={() => setSection("jokers")}
       >
         Jokers
