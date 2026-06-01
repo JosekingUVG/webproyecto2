@@ -1,13 +1,24 @@
+import { useState } from "react";
+
+import RulesNavbar from "../components/rules/RulesNavBar";
+import RulesContent from "../components/rules/RulesContent";
+import "../styles/rules.css";
+
 function RulesScreen({ setScreen }) {
+  const [section, setSection] = useState("score");
+
   return (
-    <main>
-      <h1>📜 Reglas</h1>
+    <main className="rules-screen">
+      <RulesNavbar
+        section={section}
+        setSection={setSection}
+      />
 
-      <p>
-        Aquí van las reglas del juego...
-      </p>
+      <RulesContent section={section} />
 
-      <button onClick={() => setScreen("menu")}>
+      <button
+      className="rules-btn"
+       onClick={() => setScreen("menu")}>
         Volver
       </button>
     </main>
