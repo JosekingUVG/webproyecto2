@@ -13,6 +13,7 @@ Crea `src/data/jokersData.js`:
 import ChaoticJokerImg from '../assets/jokers/Chaotic Joker.png';
 import SadJokerImg from '../assets/jokers/Sad Joker.png';
 import WishfulJokerImg from '../assets/jokers/Wishful Joker.png';
+import PrizeJokerImg from '../assets/jokers/Puzzled Joker.png';
 
 export const JOKERS_CONFIG = {
   'chaotic_joker': {
@@ -32,6 +33,12 @@ export const JOKERS_CONFIG = {
     image: WishfulJokerImg,
     suitTarget: 'S', // ♠️ Picas
     description: 'Aumenta el puntaje según la cantidad de cartas de picas en la mano.'
+  },
+  'puzzled_joker': {
+    name: 'Puzzled Joker',
+    image: PuzzledJokerImg,
+    suitTarget: 'H', // ♥️ Corazones
+    description: 'Aumenta el puntaje según la cantidad de cartas de corazones en la mano.'
   }
 };
 
