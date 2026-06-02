@@ -9,7 +9,7 @@ Universidad del Valle de Guatemala
 Link del video: 
 
 ```txt
-(https://youtu.be/K0XzIC8irFk)
+https://youtu.be/K0XzIC8irFk
 ```
 ---
 
