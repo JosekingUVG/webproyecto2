@@ -1,16 +1,16 @@
 import anteBox from "../../assets/ui/left_bar/Ante_Box.png";
 import roundBox from "../../assets/ui/left_bar/Round_Box.png";
 
-function GameInfo({ ante, round }) {
+function GameInfo({ round, totalScore }) {
   return (
     <div className="game-info">
       <div className="info-wrapper">
-        <img src={anteBox} alt="ante" className="info-img" />
-        <span className="info-value">{ante}</span>
+        <img src={anteBox} alt="round" className="info-img" />
+        <span className="info-value">{round}</span>
       </div>
       <div className="info-wrapper">
-        <img src={roundBox} alt="round" className="info-img" />
-        <span className="info-value">{round}</span>
+        <img src={roundBox} alt="score" className="info-img" />
+        <span className="info-value">{totalScore}</span>
       </div>
     </div>
   );

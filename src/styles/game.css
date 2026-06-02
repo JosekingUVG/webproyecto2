@@ -308,6 +308,39 @@
   left: 0;
 }
 
+
+.sidebar-right-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.ranks-list, .suits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.counter-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sprite-icon {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.counter-num {
+  color: white;
+  font-size: 11px;
+}
+
 .info-wrapper {
   position: relative;
   display: flex;
@@ -324,4 +357,52 @@
   position: absolute;
   color: white;
   font-weight: bold;
+}
+
+
+.jokers-bar {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 15px;
+  padding-top: 150px;
+}
+
+.joker-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joker-img {
+  width: 150px;
+  height: auto;
+}
+
+.counter-icon {
+  width: 60px;
+  height: auto;
+}
+
+.loss-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.loss-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loss-btn:hover {
+  background-color: #555;
 }

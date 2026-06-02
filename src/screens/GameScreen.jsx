@@ -13,6 +13,7 @@ import { discardCards } from "../utils/game/discardCards";
 import discardImg from "../assets/ui/Center/Discard.png";
 import playImg from "../assets/ui/Center/Play.png";
 import lossImg from "../assets/ui/Center/Loss.png";
+import JokersBar from "../components/game/JokersBar";
 import "../styles/game.css";
 
 function GameScreen({ setScreen }) {
@@ -20,8 +21,6 @@ function GameScreen({ setScreen }) {
   const [round, setRound] = useState(1);
   const [targetScore, setTargetScore] = useState(0);
   const [activeJokers, setActiveJokers] = useState([]);
-  const [chips] = useState(50);
-  const [ante] = useState(1);
   const [deck, setDeck] = useState([]);
   const [totalScore, setTotalScore] = useState(0);
   const [handsLeft, setHandsLeft] = useState(4);
@@ -135,21 +134,21 @@ function GameScreen({ setScreen }) {
     setShowRoundMessage(true);
     setTimeout(() => setShowRoundMessage(false), 2000);
   };
-
+  
   return (
     <div className="game-screen">
 
       <SidebarLeft
         targetScore={targetScore}
-        chips={chips}
-        multiplier={multiplier}
-        ante={ante}
+        handsLeft={handsLeft}
+        discardsLeft={discardsLeft}
         round={round}
+        totalScore={totalScore}
         activeJokers={activeJokers}
       />
 
       <div className="game-center">
-        <div className="jokers-bar"></div>
+        <JokersBar activeJokers={activeJokers} />
         <div className="play-area"></div>
         <div className="player-hand">
           <CardContainer cards={playerHand} selectedIndices={selectedIndices} onSelectionChange={setSelectedIndices} />
@@ -167,6 +166,11 @@ function GameScreen({ setScreen }) {
         {showLoss && (
           <div className="loss-overlay">
             <img src={lossImg} alt="loss" />
+            <div className="loss-buttons">
+              <button className="loss-btn" onClick={() => setScreen("menu")}>
+                Menú Principal
+              </button>
+            </div>
           </div>
         )}
 
@@ -181,7 +185,7 @@ function GameScreen({ setScreen }) {
         )}
       </div>
 
-      <SidebarRight />
+      <SidebarRight deck={deck} />
 
     </div>
   );

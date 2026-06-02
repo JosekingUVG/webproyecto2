@@ -1,4 +1,5 @@
 import { useState } from "react";
+import backBtn from "../assets/ui/General/Back.png";
 
 import RulesNavbar from "../components/rules/RulesNavBar";
 import RulesContent from "../components/rules/RulesContent";
@@ -16,11 +17,9 @@ function RulesScreen({ setScreen }) {
 
       <RulesContent section={section} />
 
-      <button
-      className="rules-btn"
-       onClick={() => setScreen("menu")}>
-        Volver
-      </button>
+    <button className="back-btn" onClick={() => setScreen("menu")}>
+      <img src={backBtn} alt="back" />
+    </button>
     </main>
   );
 }
