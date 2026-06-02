@@ -11,6 +11,11 @@ Link del video:
 ```txt
 https://youtu.be/K0XzIC8irFk
 ```
+
+video de aclaración 
+```txt
+https://youtu.be/TnpZDiBxsz0
+```
 ---
 
 # 🚀 Instalación y Ejecución
