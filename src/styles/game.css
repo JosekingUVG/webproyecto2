@@ -1,46 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-screen {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
 .sidebar-left {
   width: 250px;
-  background-color: #333;
+  height: 100vh;
   flex-shrink: 0;
+  position: relative;
+}
+
+.sidebar-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
   gap: 20px;
   padding: 20px;
 }
 
 .score-display {
+  position: relative;
   width: 100%;
-  background-color: #555;
-  border: 2px solid #000;
-  padding: 10px;
-  text-align: center;
+}
+
+.score-display img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.score-display p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  margin: 0;
 }
 
 .chips-multiplier {
+  position: relative;
   width: 100%;
-  background-color: #555;
-  border: 2px solid #000;
-  padding: 15px;
+}
+
+.chips-multiplier-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chips-multiplier-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  justify-content: space-around;
+  gap: 10px;
+}
+
+.counter-wrapper {
+  position: relative;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.chips {
-  background-color: #6ab4f5;
-  padding: 8px 20px;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
+.counter-img {
+  width: 60px;
+  height: auto;
 }
 
-.multiplier {
-  background-color: #8b0000;
-  padding: 8px 20px;
-  border-radius: 20px;
+.counter-value {
+  position: absolute;
   color: white;
   font-weight: bold;
 }
@@ -53,23 +103,59 @@
 
 .ante-display, .round-display {
   flex: 1;
-  background-color: #555;
-  border: 2px solid #000;
-  padding: 10px;
   text-align: center;
   color: white;
 }
 
-
-.sidebar-left {
-  width: 250px;
-  height: 100vh;
-  background-color: #333;
-  flex-shrink: 0;
+.game-center {
+  flex: 1;
+  background-color: #2d8a4e;
   display: flex;
   flex-direction: column;
+}
+
+.jokers-bar {
+  height: 15%;
+}
+
+.play-area {
+  flex: 1;
+}
+
+.player-hand {
+  height: 35%;
+  border-radius: 20px 20px 0 0;
+}
+
+.sidebar-right {
+  width: 180px;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.sidebar-right-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info-wrapper {
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+}
+
+.info-img {
+  width: 100px;
+  height: auto;
+}
+
+.info-value {
+  position: absolute;
+  color: white;
+  font-weight: bold;
 }
