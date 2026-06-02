@@ -16,7 +16,7 @@
   border: none;
   border-radius: 8px;
 
-  background-color: #6b46c1;
+  background-color: #16a34a;
   color: white;
 
   font-weight: bold;
@@ -27,15 +27,15 @@
 }
 
 .rules-navbar button:hover {
-  background-color: #805ad5;
+  background-color: #22c55e;
   transform: translateY(-2px);
 }
 
 .rules-navbar button.active {
-  background-color: #5b31b6;
+  background-color: #0f766e;
 
   box-shadow:
-    0 0 10px rgba(91, 49, 182, 0.8);
+    0 0 10px rgba(16, 163, 74, 0.8);
 
   transform: scale(1.05);
 }

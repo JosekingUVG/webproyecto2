@@ -12,7 +12,7 @@
   border: none;
   border-radius: 8px;
 
-  background-color: #6b46c1;
+  background-color: #16a34a;
   color: white;
 
   font-weight: bold;
@@ -21,10 +21,9 @@
 
   transition: 0.2s;
 
-  
 }
 
 .rules-btn:hover {
-  background-color: #805ad5;
+  background-color: #22c55e;
   transform: translateY(-2px);
 }
