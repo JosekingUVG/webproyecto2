@@ -9,16 +9,16 @@
 /* BODY */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Courier New", Courier, monospace;
 
   background: linear-gradient(
     180deg,
-    #090014,
-    #12002b,
-    #1b003d
+    #041405,
+    #08220a,
+    #0c3a11
   );
 
-  color: white;
+  color: #e8ffe8;
 
   min-height: 100vh;
 }
@@ -44,11 +44,11 @@ body {
 .title {
   font-size: 4rem;
 
-  color: #9f7aea;
+  color: #7cff73;
 
   text-shadow:
-    0 0 10px #9f7aea,
-    0 0 20px #6b46c1;
+    0 0 10px #7cff73,
+    0 0 20px #22c55e;
 }
 
 /* SUBTITLE */
@@ -56,7 +56,7 @@ body {
 .subtitle {
   font-size: 1.2rem;
 
-  color: #d6bcfa;
+  color: #b6ffb2;
 
   margin-bottom: 2rem;
 }
@@ -69,7 +69,7 @@ body {
   border: none;
   border-radius: 8px;
 
-  background-color: #6b46c1;
+  background-color: #16a34a;
   color: white;
 
   font-weight: bold;
@@ -80,14 +80,14 @@ body {
 }
 
 .main-menu button:hover {
-  background-color: #805ad5;
+  background-color: #22c55e;
   transform: translateY(-2px);
 }
 
 /* HOVER */
 
 .main-menu button:hover {
-  background-color: #805ad5;
+  background-color: #22c55e;
 
   transform: scale(1.05);
 }
