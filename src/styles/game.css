@@ -1,0 +1,75 @@
+.sidebar-left {
+  width: 250px;
+  background-color: #333;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.score-display {
+  width: 100%;
+  background-color: #555;
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.chips-multiplier {
+  width: 100%;
+  background-color: #555;
+  border: 2px solid #000;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chips {
+  background-color: #6ab4f5;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.multiplier {
+  background-color: #8b0000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.game-info {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.ante-display, .round-display {
+  flex: 1;
+  background-color: #555;
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+.sidebar-left {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
